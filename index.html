@@ -5,112 +5,348 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dacheng Shen | Academic Homepage</title>
   <style>
+    :root {
+      --primary-color: #0066cc;
+      --secondary-color: #f3f7fb;
+      --text-color: #333;
+      --heading-color: #1a1a1a;
+      --accent-color: #e6f0ff;
+      --border-color: #e0e0e0;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
     body {
-      font-family: "Helvetica Neue", sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.7;
+      background: #fff;
+      color: var(--text-color);
     }
-    h1, h2 {
-      color: #1a1a1a;
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
     }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-content {
+      flex: 1;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: var(--heading-color);
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent-color);
+      color: var(--heading-color);
+    }
+    
     a {
-      color: #0066cc;
+      color: var(--primary-color);
       text-decoration: none;
+      transition: color 0.2s;
     }
+    
     a:hover {
+      color: #004999;
       text-decoration: underline;
     }
+    
     .section {
       margin-top: 40px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 25px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
-    .contact p {
-      margin: 0;
+    
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
     }
-    .skills ul {
-      padding-left: 20px;
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
+    
+    .contact-icon {
+      color: var(--primary-color);
+    }
+    
+    .education-item, .experience-item, .project-item {
       margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .education-item:last-child, .experience-item:last-child, .project-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    
+    .item-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    
+    .item-subtitle {
+      color: #666;
+      font-style: italic;
+    }
+    
+    .item-date {
+      color: #666;
+      font-style: italic;
+    }
+    
+    ul {
+      list-style-position: inside;
+      margin-top: 10px;
+    }
+    
+    li {
+      margin-bottom: 5px;
+    }
+    
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 30px;
+    }
+    
+    .skill-category {
+      flex: 1;
+      min-width: 200px;
+    }
+    
+    .skill-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: var(--primary-color);
+    }
+    
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    
+    .skill-item {
+      background-color: var(--accent-color);
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .profile-img {
+        width: 150px;
+        height: 150px;
+      }
+      
+      .contact-info {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <img src="SDC.jpg" alt="Dacheng Shen" class="profile-img" />
+      <div class="header-content">
+        <h1>Dacheng Shen</h1>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span>jasonshendc@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <span>+1 860-634-1461</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <a href="https://www.linkedin.com/in/dacheng-shen" target="_blank">linkedin.com/in/dacheng-shen</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Los Angeles, CA</span>
+          </div>
+        </div>
+      </div>
+    </header>
 
-  <img src="SDC.jpg" alt="Dacheng Shen" class="profile-img" />
+    <section class="section">
+      <h2>🎓 Education</h2>
+      <div class="education-item">
+        <div class="item-header">
+          <span class="item-title">University of Southern California</span>
+          <span class="item-date">June 2024 - Dec 2025</span>
+        </div>
+        <div class="item-subtitle">M.S. in Computer Science</div>
+      </div>
+      
+      <div class="education-item">
+        <div class="item-header">
+          <span class="item-title">University of Connecticut</span>
+          <span class="item-date">Sept 2020 - May 2024</span>
+        </div>
+        <div class="item-subtitle">B.S. in Computer Science (GPA: 3.65)</div>
+        <div>Dean's List Honors</div>
+      </div>
+    </section>
 
-  <h1>Dacheng Shen</h1>
-  <p><strong>Email:</strong> jasonshendc@gmail.com</p>
-  <p><strong>Phone:</strong> +1 860-634-1461</p>
-  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dacheng-shen" target="_blank">dacheng-shen</a></p>
-  <p><strong>Location:</strong> Los Angeles, CA</p>
+    <section class="section">
+      <h2>💼 Experience</h2>
+      <div class="experience-item">
+        <div class="item-header">
+          <span class="item-title">Software Development Engineer</span>
+          <span class="item-date">Jul 2023 – Aug 2023</span>
+        </div>
+        <div class="item-subtitle">HICOCA Intelligent Equipment Technology</div>
+        <ul>
+          <li>Managed backend and server maintenance</li>
+          <li>Updated framework, improved UI and performance</li>
+          <li>Configured DB privileges and security</li>
+          <li>Led UI development with 32% improved user satisfaction</li>
+        </ul>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>🎓 Education</h2>
-    <p><strong>University of Southern California</strong>, M.S. in Computer Science<br>
-    <em>June 2024 - Dec 2025</em></p>
+    <section class="section">
+      <h2>📚 Projects</h2>
+      <div class="project-item">
+        <div class="item-header">
+          <span class="item-title">Comparative Narrative Analysis with Claude 3.7</span>
+          <span class="item-date">Mar 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Designed automated LLM evaluation pipeline</li>
+          <li>Used Anthropic API, batched prompts, parsed JSON outputs</li>
+          <li>Collaborated on bias-reducing evaluation metrics</li>
+        </ul>
+      </div>
+      
+      <div class="project-item">
+        <div class="item-header">
+          <span class="item-title">OEM Controls Automated Angle Test for AS5</span>
+          <span class="item-date">Aug 2023 – May 2024</span>
+        </div>
+        <ul>
+          <li>Led QA automation project for AS5 sensor</li>
+          <li>Used Python + Ubuntu + Robot Arm APIs</li>
+          <li>Reduced manual testing time by 67%</li>
+        </ul>
+      </div>
+      
+      <div class="project-item">
+        <div class="item-header">
+          <span class="item-title">Student Admin Design</span>
+          <span class="item-date">Sept 2023 – Dec 2024</span>
+        </div>
+        <ul>
+          <li>Used Figma for UI/UX design</li>
+          <li>Implemented frontend and backend integration</li>
+        </ul>
+      </div>
+      
+      <div class="project-item">
+        <div class="item-header">
+          <span class="item-title">Food Ordering App</span>
+          <span class="item-date">Aug 2021 – Nov 2021</span>
+        </div>
+        <ul>
+          <li>Built Java-based invoice system</li>
+          <li>Led GitHub-based team collaboration</li>
+        </ul>
+      </div>
+    </section>
 
-    <p><strong>University of Connecticut</strong>, B.S. in Computer Science (GPA: 3.65)<br>
-    <em>Sept 2020 - May 2024</em><br>
-    Dean’s List Honors</p>
+    <section class="section">
+      <h2>🔧 Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <div class="skill-title">Languages</div>
+          <div class="skill-list">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">C</div>
+            <div class="skill-item">C++</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">HTML</div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-title">Tools</div>
+          <div class="skill-list">
+            <div class="skill-item">Git</div>
+            <div class="skill-item">AWS</div>
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">Figma</div>
+            <div class="skill-item">Trello</div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-title">Technologies</div>
+          <div class="skill-list">
+            <div class="skill-item">RAG</div>
+            <div class="skill-item">Hugging Face</div>
+            <div class="skill-item">Web Crawling</div>
+            <div class="skill-item">OOP</div>
+            <div class="skill-item">Relational DB</div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-
-  <div class="section">
-    <h2>💼 Experience</h2>
-    <p><strong>HICOCA Intelligent Equipment Technology</strong><br>
-    Software Development Engineer, Jul 2023 – Aug 2023</p>
-    <ul>
-      <li>Managed backend and server maintenance</li>
-      <li>Updated framework, improved UI and performance</li>
-      <li>Configured DB privileges and security</li>
-      <li>Led UI development with 32% improved user satisfaction</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>📚 Projects</h2>
-    <p><strong>Comparative Narrative Analysis with Claude 3.7</strong> (Mar 2025 – Present)</p>
-    <ul>
-      <li>Designed automated LLM evaluation pipeline</li>
-      <li>Used Anthropic API, batched prompts, parsed JSON outputs</li>
-      <li>Collaborated on bias-reducing evaluation metrics</li>
-    </ul>
-
-    <p><strong>OEM Controls Automated Angle Test for AS5</strong> (Aug 2023 – May 2024)</p>
-    <ul>
-      <li>Led QA automation project for AS5 sensor</li>
-      <li>Used Python + Ubuntu + Robot Arm APIs</li>
-      <li>Reduced manual testing time by 67%</li>
-    </ul>
-
-    <p><strong>Student Admin Design</strong> (Sept 2023 – Dec 2024)</p>
-    <ul>
-      <li>Used Figma for UI/UX design</li>
-      <li>Implemented frontend and backend integration</li>
-    </ul>
-
-    <p><strong>Food Ordering App</strong> (Aug 2021 – Nov 2021)</p>
-    <ul>
-      <li>Built Java-based invoice system</li>
-      <li>Led GitHub-based team collaboration</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>🔧 Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, Java, C, C++, SQL, HTML</li>
-      <li><strong>Tools:</strong> Git, AWS, Docker, Figma, Trello</li>
-      <li><strong>Technologies:</strong> RAG, Hugging Face, Web Crawling, OOP, Relational DB</li>
-    </ul>
-  </div>
-
 </body>
 </html>
