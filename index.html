@@ -106,13 +106,16 @@
       color: var(--primary-color);
     }
     
-    .education-item, .experience-item, .project-item {
+    .education-item, .experience-item, .project-item, .research-item {
       margin-bottom: 20px;
       padding-bottom: 20px;
       border-bottom: 1px solid var(--border-color);
     }
     
-    .education-item:last-child, .experience-item:last-child, .project-item:last-child {
+    .education-item:last-child, 
+    .experience-item:last-child, 
+    .project-item:last-child,
+    .research-item:last-child {
       border-bottom: none;
       padding-bottom: 0;
       margin-bottom: 0;
@@ -193,6 +196,15 @@
         flex-direction: column;
         gap: 10px;
       }
+      
+      .item-header {
+        flex-direction: column;
+        gap: 5px;
+      }
+      
+      .item-date {
+        align-self: flex-end;
+      }
     }
   </style>
 </head>
@@ -260,51 +272,96 @@
       </div>
     </section>
 
+    <!-- New Research Section -->
+    <section class="section">
+      <h2>🔬 Research</h2>
+      <div class="research-item">
+        <div class="item-header">
+          <span class="item-title">Comparative Narrative Analysis with Claude 3.7 (Research Assistant)</span>
+          <span class="item-date">Mar. 2025 - Now</span>
+        </div>
+        <ul>
+          <li>Designed and automated a full Claude 3.7 Sonnet-based LLM evaluation pipeline for 208 narrative pairs under four comparison dimensions (conflict, unique, holistic, overlapping)</li>
+          <li>Engineered scalable prompt-based inference using anthropic API and batched output parsing, reducing manual judgment workload by over 90%</li>
+          <li>Structured model responses into JSON and human-readable formats to enable systematic cross-model analysis and future human annotation</li>
+          <li>Collaborated with faculty and research team on dataset preparation, narrative extraction, and designing metrics for minimizing bias in LLM comparison</li>
+        </ul>
+      </div>
+      
+      <div class="research-item">
+        <div class="item-header">
+          <span class="item-title">OEM Controls Automated Angle Test for AS5</span>
+          <span class="item-date">Aug. 2023 - May. 2024</span>
+        </div>
+        <ul>
+          <li>Led a year-long capstone project to automate Quality Assurance testing for the AS5 sensor system, significantly improving testing efficiency and reliability</li>
+          <li>Developed a Python-based control system on Ubuntu to operate a 6-axis robot arm, automating sensor calibration and test procedures with precise "Pass/Fail" feedback and real-time result logging</li>
+          <li>Designed and implemented a seamless UI-Backend integration using APIs, replacing the previous client version with a fully automated calibration solution</li>
+          <li>Successfully delivered the project, reducing manual testing time by 67% and improving calibration accuracy by 26%, which enhanced overall efficiency and reliability</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="section">
       <h2>📚 Projects</h2>
       <div class="project-item">
         <div class="item-header">
-          <span class="item-title">Comparative Narrative Analysis with Claude 3.7</span>
-          <span class="item-date">Mar 2025 - Present</span>
+          <span class="item-title">Multi-Backbone Transfer Learning for Fine-Grained Solid Waste Classification</span>
+          <span class="item-date">Jan. 2025 - May 2025</span>
         </div>
         <ul>
-          <li>Designed automated LLM evaluation pipeline</li>
-          <li>Used Anthropic API, batched prompts, parsed JSON outputs</li>
-          <li>Collaborated on bias-reducing evaluation metrics</li>
+          <li>Developed a multi-class image classifier for nine waste categories using Python, TensorFlow/Keras, with an 80/20 train/test split and 20% in-training validation for robust model evaluation</li>
+          <li>Built a preprocessing pipeline to resize images and applied extensive data augmentation (random crops, zooms, rotations, flips, contrast adjustments, translations) to mitigate overfitting</li>
+          <li>Implemented transfer learning by freezing pretrained backbones (ResNet50, ResNet101, EfficientNetB0, VGG16) and adding custom FC layers with ReLU, softmax, L2 regularization, batch normalization, and 20% dropout; trained with Adam optimizer and early stopping over 100 epochs</li>
+          <li>Evaluated all models on test set using precision, recall, AUC and F1-score; identified VGG16 as the top performer—achieving highest accuracy and generalization—and selected it as the final model</li>
         </ul>
       </div>
       
       <div class="project-item">
         <div class="item-header">
-          <span class="item-title">OEM Controls Automated Angle Test for AS5</span>
-          <span class="item-date">Aug 2023 - May 2024</span>
+          <span class="item-title">AI-Driven Travel Assistant Design – FlySmart</span>
+          <span class="item-date">Mar. 2025 - May. 2025</span>
         </div>
         <ul>
-          <li>Led QA automation project for AS5 sensor</li>
-          <li>Used Python + Ubuntu + Robot Arm APIs</li>
-          <li>Reduced manual testing time by 67%</li>
+          <li>Led a requirements engineering project to design an AI-powered flight booking assistant</li>
+          <li>Conducted stakeholder analysis, surveys, and interviews, derived user personas, empathy maps, and categorized requirements</li>
+          <li>Created and validated a Figma prototype with features including flight search, visa management, smart alerts, and personalized AI chat interface</li>
+          <li>Applied agile methodology with story-driven backlog, sprint-based development roadmap, and formal validation via usability testing and prototyping</li>
+        </ul>
+      </div>
+      
+      <div class="project-item">
+        <div class="item-header">
+          <span class="item-title">Semantic Retrieval and QA System with Weaviate & RAG</span>
+          <span class="item-date">Sep. 2024 - Dec 2024</span>
+        </div>
+        <ul>
+          <li>Built a semantic search pipeline using Weaviate with text2vec-transformers for vector-based brand similarity via GraphQL nearText queries</li>
+          <li>Developed a PDF QA chatbot with Streamlit, leveraging PyPDFLoader, ChromaDB, and Hugging Face embeddings in a RAG framework for document-grounded response generation</li>
         </ul>
       </div>
       
       <div class="project-item">
         <div class="item-header">
           <span class="item-title">Student Admin Design</span>
-          <span class="item-date">Sept 2023 - Dec 2024</span>
+          <span class="item-date">Sep. 2023 - Dec. 2024</span>
         </div>
         <ul>
-          <li>Used Figma for UI/UX design</li>
-          <li>Implemented frontend and backend integration</li>
+          <li>Collaborated on a group project, using Figma to design the product model and present the plan to stakeholders</li>
+          <li>Developed and implemented the code to bring each Figma design feature to life</li>
+          <li>Completed the website development and thoroughly tested all functionalities</li>
         </ul>
       </div>
       
       <div class="project-item">
         <div class="item-header">
-          <span class="item-title">Food Ordering App</span>
-          <span class="item-date">Aug 2021 - Nov 2021</span>
+          <span class="item-title">Food Ordering App Design</span>
+          <span class="item-date">Aug. 2021 - Nov. 2021</span>
         </div>
         <ul>
-          <li>Built Java-based invoice system</li>
-          <li>Led GitHub-based team collaboration</li>
+          <li>Used Java to build a food ordering app that could generate an invoice with the name and price of the dish and the total price after ordering</li>
+          <li>Group leader, used GitHub to share and merge information and parts of what each group member had finished</li>
+          <li>Completed a report and made a presentation</li>
         </ul>
       </div>
     </section>
