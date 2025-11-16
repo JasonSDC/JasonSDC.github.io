@@ -12,6 +12,8 @@
       --heading-color: #1a1a1a;
       --accent-color: #e6f0ff;
       --border-color: #e0e0e0;
+      --skill-bg: #f0f7ff;
+      --skill-hover: #e1f0ff;
     }
     
     * {
@@ -151,36 +153,70 @@
       margin-bottom: 5px;
     }
     
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px 30px;
+    /* Improved Skills Section Styles */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 10px;
     }
     
     .skill-category {
-      flex: 1;
-      min-width: 200px;
+      background: linear-gradient(135deg, #f8fbff 0%, #f0f7ff 100%);
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #e3ecf7;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .skill-category:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 102, 204, 0.1);
+    }
+    
+    .skill-category-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .skill-icon {
+      font-size: 1.3rem;
     }
     
     .skill-title {
-      font-weight: bold;
-      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 1.05rem;
       color: var(--primary-color);
+      margin: 0;
     }
     
-    .skill-list {
+    .skill-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: 8px;
     }
     
-    .skill-item {
-      background-color: var(--accent-color);
-      padding: 5px 10px;
-      border-radius: 15px;
-      font-size: 0.9rem;
+    .skill-tag {
+      background: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--text-color);
+      border: 1px solid #e0e9f5;
+      transition: all 0.2s ease;
+      white-space: nowrap;
     }
     
+    .skill-tag:hover {
+      background: var(--primary-color);
+      color: white;
+      border-color: var(--primary-color);
+      transform: scale(1.05);
+    }
+    
+    /* Responsive adjustments */
     @media (max-width: 768px) {
       .header {
         flex-direction: column;
@@ -204,6 +240,21 @@
       
       .item-date {
         align-self: flex-end;
+      }
+      
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .skill-tags {
+        gap: 6px;
+      }
+      
+      .skill-tag {
+        padding: 5px 10px;
+        font-size: 0.8rem;
       }
     }
   </style>
@@ -391,42 +442,95 @@
       </div>
     </section>
 
+    <!-- Improved Skills Section -->
     <section class="section">
       <h2>🔧 Skills</h2>
-      <div class="skills-container">
-        <div class="skill-category">
-          <div class="skill-title">Languages</div>
-          <div class="skill-list">
-            <div class="skill-item">Python</div>
-            <div class="skill-item">Java</div>
-            <div class="skill-item">C</div>
-            <div class="skill-item">C++</div>
-            <div class="skill-item">SQL</div>
-            <div class="skill-item">HTML</div>
-          </div>
-        </div>
+      <div class="skills-grid">
         
         <div class="skill-category">
-          <div class="skill-title">Tools</div>
-          <div class="skill-list">
-            <div class="skill-item">Git</div>
-            <div class="skill-item">AWS</div>
-            <div class="skill-item">Docker</div>
-            <div class="skill-item">Figma</div>
-            <div class="skill-item">Trello</div>
+          <div class="skill-category-header">
+            <span class="skill-icon">💻</span>
+            <h3 class="skill-title">Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
           </div>
         </div>
-        
+
         <div class="skill-category">
-          <div class="skill-title">Technologies</div>
-          <div class="skill-list">
-            <div class="skill-item">RAG</div>
-            <div class="skill-item">Hugging Face</div>
-            <div class="skill-item">Web Crawling</div>
-            <div class="skill-item">OOP</div>
-            <div class="skill-item">Relational DB</div>
+          <div class="skill-category-header">
+            <span class="skill-icon">🤖</span>
+            <h3 class="skill-title">AI / ML / NLP</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Hugging Face</span>
+            <span class="skill-tag">Transformers</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Transfer Learning</span>
+            <span class="skill-tag">LLM Prompting</span>
+            <span class="skill-tag">Semantic Search</span>
+            <span class="skill-tag">MapReduce</span>
+            <span class="skill-tag">Model Evaluation</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">NLTK</span>
+            <span class="skill-tag">Gensim</span>
+            <span class="skill-tag">scikit-learn</span>
           </div>
         </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="skill-icon">🗄️</span>
+            <h3 class="skill-title">Data & Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">ChromaDB</span>
+            <span class="skill-tag">Weaviate</span>
+            <span class="skill-tag">Web Crawling</span>
+            <span class="skill-tag">Data Preprocessing</span>
+            <span class="skill-tag">JSON Parsing</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="skill-icon">📐</span>
+            <h3 class="skill-title">Software Design</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Modular Architecture</span>
+            <span class="skill-tag">UML</span>
+            <span class="skill-tag">Agile (Scrum)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <span class="skill-icon">🛠️</span>
+            <h3 class="skill-title">Tools & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Trello</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Microsoft Office Suite</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">Lightroom</span>
+            <span class="skill-tag">Photoshop</span>
+          </div>
+        </div>
+
       </div>
     </section>
   </div>
