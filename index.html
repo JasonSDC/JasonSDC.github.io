@@ -1,264 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dacheng Shen | Academic Homepage</title>
-  <style>
-    :root {
-      --primary-color: #0066cc;
-      --secondary-color: #f3f7fb;
-      --text-color: #333;
-      --heading-color: #1a1a1a;
-      --accent-color: #e6f0ff;
-      --border-color: #e0e0e0;
-      --skill-bg: #f0f7ff;
-      --skill-hover: #e1f0ff;
-    }
-    
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.7;
-      background: #fff;
-      color: var(--text-color);
-    }
-    
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    
-    .header {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      padding-bottom: 30px;
-      border-bottom: 1px solid var(--border-color);
-    }
-    
-    .profile-img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    .header-content {
-      flex: 1;
-    }
-    
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      color: var(--heading-color);
-    }
-    
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--accent-color);
-      color: var(--heading-color);
-    }
-    
-    a {
-      color: var(--primary-color);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    
-    a:hover {
-      color: #004999;
-      text-decoration: underline;
-    }
-    
-    .section {
-      margin-top: 40px;
-      background: #fff;
-      border-radius: 8px;
-      padding: 25px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
-    
-    .contact-info {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-    
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    
-    .contact-icon {
-      color: var(--primary-color);
-    }
-    
-    .education-item, .experience-item, .project-item, .research-item {
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border-color);
-    }
-    
-    .education-item:last-child, 
-    .experience-item:last-child, 
-    .project-item:last-child,
-    .research-item:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-    
-    .item-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 8px;
-    }
-    
-    .item-title {
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    
-    .item-subtitle {
-      color: #666;
-      font-style: italic;
-    }
-    
-    .item-date {
-      color: #666;
-      font-style: italic;
-    }
-    
-    ul {
-      list-style-position: inside;
-      margin-top: 10px;
-    }
-    
-    li {
-      margin-bottom: 5px;
-    }
-    
-    /* Improved Skills Section Styles */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-top: 10px;
-    }
-    
-    .skill-category {
-      background: linear-gradient(135deg, #f8fbff 0%, #f0f7ff 100%);
-      border-radius: 12px;
-      padding: 20px;
-      border: 1px solid #e3ecf7;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    
-    .skill-category:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 102, 204, 0.1);
-    }
-    
-    .skill-category-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-    
-    .skill-icon {
-      font-size: 1.3rem;
-    }
-    
-    .skill-title {
-      font-weight: 600;
-      font-size: 1.05rem;
-      color: var(--primary-color);
-      margin: 0;
-    }
-    
-    .skill-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    
-    .skill-tag {
-      background: white;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      color: var(--text-color);
-      border: 1px solid #e0e9f5;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-    
-    .skill-tag:hover {
-      background: var(--primary-color);
-      color: white;
-      border-color: var(--primary-color);
-      transform: scale(1.05);
-    }
-    
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      
-      .profile-img {
-        width: 150px;
-        height: 150px;
-      }
-      
-      .contact-info {
-        flex-direction: column;
-        gap: 10px;
-      }
-      
-      .item-header {
-        flex-direction: column;
-        gap: 5px;
-      }
-      
-      .item-date {
-        align-self: flex-end;
-      }
-      
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .skill-tags {
-        gap: 6px;
-      }
-      
-      .skill-tag {
-        padding: 5px 10px;
-        font-size: 0.8rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <div class="container">
     <header class="header">
@@ -275,16 +24,28 @@
             <a href="tel:+18606341461">+1 860-634-1461</a>
           </div>
           <div class="contact-item">
-            <span class="contact-icon"><svg height="18" width="18" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.366-1.85 3.595 0 4.257 2.366 4.257 5.448v6.293zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.863 20.452H3.813V9h3.05v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+            <span class="contact-icon">
+              <!-- LinkedIn Official Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </span>
             <a href="https://www.linkedin.com/in/dacheng-shen" target="_blank">linkedin.com/in/dacheng-shen</a>
           </div>
           <div class="contact-item">
-            <span class="contact-icon"><svg height="18" width="18" viewBox="0 0 16 16" fill="#000000" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></span>
+            <span class="contact-icon">
+              <!-- GitHub Icon (Blue) -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#181717">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </span>
             <a href="https://github.com/JasonSDC" target="_blank">github.com/JasonSDC</a>
           </div>
           <div class="contact-item">
             <span class="contact-icon">📍</span>
-            <span>Los Angeles, CA</span>
+            <a href="https://www.google.com/maps/place/Richland,+WA" target="_blank">Richland, WA</a>
           </div>
         </div>
       </div>
@@ -307,7 +68,7 @@
         </div>
         <div class="item-subtitle">M.S. in Computer Science</div>
       </div>
-      
+
       <div class="education-item">
         <div class="item-header">
           <span class="item-title">University of Connecticut</span>
@@ -344,23 +105,35 @@
           <span class="item-date">Mar. 2025 - Aug. 2025</span>
         </div>
         <ul>
-          <li>Designed and automated a full Claude 3.7 Sonnet-based LLM evaluation pipeline for 208 narrative pairs under four comparison dimensions (conflict, unique, holistic, overlapping)</li>
-          <li>Engineered scalable prompt-based inference using anthropic API and batched output parsing, reducing manual judgment workload by over 90%</li>
-          <li>Structured model responses into JSON and human-readable formats to enable systematic cross-model analysis and future human annotation</li>
-          <li>Collaborated with faculty and research team on dataset preparation, narrative extraction, and designing metrics for minimizing bias in LLM comparison</li>
+          <li>Designed and automated a full Claude 3.7 Sonnet-based LLM evaluation pipeline for 208 narrative pairs
+            under four comparison dimensions (conflict, unique, holistic, overlapping)</li>
+          <li>Engineered scalable prompt-based inference using anthropic API and batched output parsing, reducing
+            manual
+            judgment workload by over 90%</li>
+          <li>Structured model responses into JSON and human-readable formats to enable systematic cross-model
+            analysis
+            and future human annotation</li>
+          <li>Collaborated with faculty and research team on dataset preparation, narrative extraction, and
+            designing
+            metrics for minimizing bias in LLM comparison</li>
         </ul>
       </div>
-      
+
       <div class="research-item">
         <div class="item-header">
           <span class="item-title">OEM Controls Automated Angle Test for AS5</span>
           <span class="item-date">Aug. 2023 - May. 2024</span>
         </div>
         <ul>
-          <li>Led a year-long capstone project to automate Quality Assurance testing for the AS5 sensor system, significantly improving testing efficiency and reliability</li>
-          <li>Developed a Python-based control system on Ubuntu to operate a 6-axis robot arm, automating sensor calibration and test procedures with precise "Pass/Fail" feedback and real-time result logging</li>
-          <li>Designed and implemented a seamless UI-Backend integration using APIs, replacing the previous client version with a fully automated calibration solution</li>
-          <li>Successfully delivered the project, reducing manual testing time by 67% and improving calibration accuracy by 26%, which enhanced overall efficiency and reliability</li>
+          <li>Led a year-long capstone project to automate Quality Assurance testing for the AS5 sensor system,
+            significantly improving testing efficiency and reliability</li>
+          <li>Developed a Python-based control system on Ubuntu to operate a 6-axis robot arm, automating sensor
+            calibration and test procedures with precise "Pass/Fail" feedback and real-time result logging</li>
+          <li>Designed and implemented a seamless UI-Backend integration using APIs, replacing the previous client
+            version with a fully automated calibration solution</li>
+          <li>Successfully delivered the project, reducing manual testing time by 67% and improving calibration
+            accuracy
+            by 26%, which enhanced overall efficiency and reliability</li>
         </ul>
       </div>
     </section>
@@ -369,17 +142,24 @@
       <h2>📚 Projects</h2>
       <div class="project-item">
         <div class="item-header">
-          <span class="item-title">Multi-Backbone Transfer Learning for Fine-Grained Solid Waste Classification</span>
+          <span class="item-title">Transfer Learning for Waste Classification</span>
           <span class="item-date">Jan. 2025 - May 2025</span>
         </div>
         <ul>
-          <li>Developed a multi-class image classifier for nine waste categories using Python, TensorFlow/Keras, with an 80/20 train/test split and 20% in-training validation for robust model evaluation</li>
-          <li>Built a preprocessing pipeline to resize images and applied extensive data augmentation (random crops, zooms, rotations, flips, contrast adjustments, translations) to mitigate overfitting</li>
-          <li>Implemented transfer learning by freezing pretrained backbones (ResNet50, ResNet101, EfficientNetB0, VGG16) and adding custom FC layers with ReLU, softmax, L2 regularization, batch normalization, and 20% dropout; trained with Adam optimizer and early stopping over 100 epochs</li>
-          <li>Evaluated all models on test set using precision, recall, AUC and F1-score; identified VGG16 as the top performer—achieving highest accuracy and generalization—and selected it as the final model</li>
+          <li>Developed a multi-class image classifier for nine waste categories using Python, TensorFlow/Keras,
+            with an
+            80/20 train/test split and 20% in-training validation for robust model evaluation</li>
+          <li>Built a preprocessing pipeline to resize images and applied extensive data augmentation (random crops,
+            zooms, rotations, flips, contrast adjustments, translations) to mitigate overfitting</li>
+          <li>Implemented transfer learning by freezing pretrained backbones (ResNet50, ResNet101, EfficientNetB0,
+            VGG16) and adding custom FC layers with ReLU, softmax, L2 regularization, batch normalization, and 20%
+            dropout; trained with Adam optimizer and early stopping over 100 epochs</li>
+          <li>Evaluated all models on test set using precision, recall, AUC and F1-score; identified VGG16 as the
+            top
+            performer—achieving highest accuracy and generalization—and selected it as the final model</li>
         </ul>
       </div>
-      
+
       <div class="project-item">
         <div class="item-header">
           <span class="item-title">AI-Driven Travel Assistant Design – FlySmart</span>
@@ -387,32 +167,41 @@
         </div>
         <ul>
           <li>Led a requirements engineering project to design an AI-powered flight booking assistant</li>
-          <li>Conducted stakeholder analysis, surveys, and interviews, derived user personas, empathy maps, and categorized requirements</li>
-          <li>Created and validated a Figma prototype with features including flight search, visa management, smart alerts, and personalized AI chat interface</li>
-          <li>Applied agile methodology with story-driven backlog, sprint-based development roadmap, and formal validation via usability testing and prototyping</li>
+          <li>Conducted stakeholder analysis, surveys, and interviews, derived user personas, empathy maps, and
+            categorized requirements</li>
+          <li>Created and validated a Figma prototype with features including flight search, visa management, smart
+            alerts, and personalized AI chat interface</li>
+          <li>Applied agile methodology with story-driven backlog, sprint-based development roadmap, and formal
+            validation via usability testing and prototyping</li>
         </ul>
       </div>
-      
+
       <div class="project-item">
         <div class="item-header">
           <span class="item-title">Semantic Retrieval and QA System with Weaviate & RAG</span>
           <span class="item-date">Sep. 2024 - Dec 2024</span>
         </div>
         <ul>
-          <li>Built a semantic search pipeline using Weaviate with text2vec-transformers for vector-based brand similarity via GraphQL nearText queries</li>
-          <li>Developed a PDF QA chatbot with Streamlit, leveraging PyPDFLoader, ChromaDB, and Hugging Face embeddings in a RAG framework for document-grounded response generation</li>
+          <li>Built a semantic search pipeline using Weaviate with text2vec-transformers for vector-based brand
+            similarity via GraphQL nearText queries</li>
+          <li>Developed a PDF QA chatbot with Streamlit, leveraging PyPDFLoader, ChromaDB, and Hugging Face
+            embeddings
+            in a RAG framework for document-grounded response generation</li>
         </ul>
       </div>
-      
+
       <div class="project-item">
         <div class="item-header">
           <span class="item-title">Large-Scale Sentiment Analysis on Amazon Office Reviews</span>
           <span class="item-date">Aug. 2025 - Oct. 2025</span>
         </div>
         <ul>
-          <li>Cleaned and normalized 200k+ review texts (regex HTML/URL removal, tokenization, stopword filtering, lemmatization)</li>
+          <li>Cleaned and normalized 200k+ review texts (regex HTML/URL removal, tokenization, stopword filtering,
+            lemmatization)</li>
           <li>Trained TF-IDF (uni + bi-gram) ML models including LinearSVC, Logistic Regression, and Perceptron</li>
-          <li>Reproduced and evaluated two GloVe-based representations: 100-d average pooling vs. 1000-d first-10-token concatenation</li>
+          <li>Reproduced and evaluated two GloVe-based representations: 100-d average pooling vs. 1000-d
+            first-10-token
+            concatenation</li>
           <li>Demonstrated that 100-d average pooling generalizes more robustly across unseen reviews</li>
         </ul>
       </div>
@@ -423,20 +212,25 @@
           <span class="item-date">Sep. 2023 - Dec. 2024</span>
         </div>
         <ul>
-          <li>Collaborated on a group project, using Figma to design the product model and present the plan to stakeholders</li>
+          <li>Collaborated on a group project, using Figma to design the product model and present the plan to
+            stakeholders</li>
           <li>Developed and implemented the code to bring each Figma design feature to life</li>
           <li>Completed the website development and thoroughly tested all functionalities</li>
         </ul>
       </div>
-      
+
       <div class="project-item">
         <div class="item-header">
           <span class="item-title">Food Ordering App Design</span>
           <span class="item-date">Aug. 2021 - Nov. 2021</span>
         </div>
         <ul>
-          <li>Used Java to build a food ordering app that could generate an invoice with the name and price of the dish and the total price after ordering</li>
-          <li>Group leader, used GitHub to share and merge information and parts of what each group member had finished</li>
+          <li>Used Java to build a food ordering app that could generate an invoice with the name and price of the
+            dish
+            and the total price after ordering</li>
+          <li>Group leader, used GitHub to share and merge information and parts of what each group member had
+            finished
+          </li>
           <li>Completed a report and made a presentation</li>
         </ul>
       </div>
@@ -446,7 +240,7 @@
     <section class="section">
       <h2>🔧 Skills</h2>
       <div class="skills-grid">
-        
+
         <div class="skill-category">
           <div class="skill-category-header">
             <span class="skill-icon">💻</span>
@@ -533,6 +327,10 @@
 
       </div>
     </section>
+    <footer class="footer">
+      <p>&copy; 2025 Dacheng Shen. All rights reserved.</p>
+    </footer>
   </div>
 </body>
+
 </html>
