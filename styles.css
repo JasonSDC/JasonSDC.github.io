@@ -135,6 +135,20 @@ h1 {
     margin-top: var(--spacing-sm);
 }
 
+/* Force LinkedIn to start a new row */
+.contact-item.new-row {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    visibility: hidden;
+}
+
 .contact-item {
     display: flex;
     align-items: center;
