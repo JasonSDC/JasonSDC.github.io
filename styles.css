@@ -135,16 +135,22 @@ h1 {
     margin-top: var(--spacing-sm);
 }
 
-/* Force line break before LinkedIn */
-.contact-item.new-row {
+/* Force line break after 2nd contact item using pseudo-element */
+.contact-info::after {
+    content: "";
+    order: 1;
     flex-basis: 100%;
     height: 0;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    overflow: hidden;
+}
+
+.contact-item:nth-child(1),
+.contact-item:nth-child(2) {
+    order: 0;
+}
+
+.contact-item:nth-child(3),
+.contact-item:nth-child(4) {
+    order: 2;
 }
 
 .contact-item {
