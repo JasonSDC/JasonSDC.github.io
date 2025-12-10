@@ -4,83 +4,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Dacheng Shen - Computer Science Ph.D. Student at WSU. Specializing in AI, Machine Learning, and NLP." />
   <title>Dacheng Shen | Academic Homepage</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <img src="SDC1.jpg" alt="Dacheng Shen" class="profile-img" />
-      <div class="header-content">
-        <h1>Dacheng Shen</h1>
-        <div class="contact-info">
-          <div class="contact-item">
-            <span class="contact-icon">✉️</span>
-            <a href="mailto:jasonshendc@gmail.com">jasonshendc@gmail.com</a>
-          </div> <!--
-          <div class="contact-item">
-            <span class="contact-icon">📱</span>
-            <a href="tel:+18606341461">+1 860-634-1461</a>
-          </div> -->
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <a href="https://www.google.com/maps/place/Richland,+WA" target="_blank">Richland, WA</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">
-              <!-- LinkedIn Official Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5">
-                <path
-                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-              </svg>
-            </span>
-            <a href="https://www.linkedin.com/in/dacheng-shen" target="_blank">linkedin.com/in/dacheng-shen</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">
-              <!-- GitHub Icon (Black) -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#181717">
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
-            </span>
-            <a href="https://github.com/JasonSDC" target="_blank">github.com/JasonSDC</a>
-          </div>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
 
-        </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">DS</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <section class="section">
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="SDC1.jpg" alt="Dacheng Shen" class="hero-avatar" />
+      <h1 class="hero-title">Dacheng Shen</h1>
+      <p class="hero-subtitle">Computer Science Ph.D. Student</p>
+      <p class="hero-description">
+        Passionate about AI, Machine Learning, and NLP. Currently pursuing my Ph.D. at Washington State University,
+        building intelligent systems that solve real-world problems.
+      </p>
+      <div class="hero-buttons">
+        <a href="#research" class="btn btn-primary">
+          <span>🔬</span> View Research
+        </a>
+        <a href="#projects" class="btn btn-secondary">
+          <span>💡</span> My Projects
+        </a>
+      </div>
+      <div class="hero-social">
+        <a href="mailto:jasonshendc@gmail.com" class="social-link" title="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dacheng-shen" target="_blank" class="social-link" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a href="https://github.com/JasonSDC" target="_blank" class="social-link" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://www.google.com/maps/place/Richland,+WA" target="_blank" class="social-link" title="Location">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <div class="container">
+
+    <!-- Education Section -->
+    <section id="education" class="section">
       <h2>🎓 Education</h2>
       <div class="education-item">
-        <div class="item-header">
-          <span class="item-title">Washington State University, Tri-Cities</span>
-          <span class="item-date">Jan 2026 - Present</span>
+        <div class="education-content">
+          <img src="wsu_logo.png" alt="WSU Logo" class="school-logo">
+          <div class="education-details">
+            <div class="item-header">
+              <span class="item-title">Washington State University, Tri-Cities</span>
+              <span class="item-date">Jan 2026 - Present</span>
+            </div>
+            <div class="item-subtitle">Ph.D. in Computer Science</div>
+          </div>
         </div>
-        <div class="item-subtitle">Ph.D. in Computer Science</div>
       </div>
 
       <div class="education-item">
-        <div class="item-header">
-          <span class="item-title">University of Southern California</span>
-          <span class="item-date">June 2024 - Dec 2025</span>
+        <div class="education-content">
+          <img src="usc.png" alt="USC Logo" class="school-logo">
+          <div class="education-details">
+            <div class="item-header">
+              <span class="item-title">University of Southern California</span>
+              <span class="item-date">June 2024 - Dec 2025</span>
+            </div>
+            <div class="item-subtitle">M.S. in Computer Science</div>
+          </div>
         </div>
-        <div class="item-subtitle">M.S. in Computer Science</div>
       </div>
 
       <div class="education-item">
-        <div class="item-header">
-          <span class="item-title">University of Connecticut</span>
-          <span class="item-date">Sept 2020 - May 2024</span>
+        <div class="education-content">
+          <img src="uconn.png" alt="UConn Logo" class="school-logo">
+          <div class="education-details">
+            <div class="item-header">
+              <span class="item-title">University of Connecticut</span>
+              <span class="item-date">Sept 2020 - May 2024</span>
+            </div>
+            <div class="item-subtitle">B.S. in Computer Science</div>
+            <div style="color: var(--accent-teal); font-weight: 500;">Dean's List Honors</div>
+          </div>
         </div>
-        <div class="item-subtitle">B.S. in Computer Science</div>
-        <div>Dean's List Honors</div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Experience Section -->
+    <section id="experience" class="section">
       <h2>💼 Experience</h2>
       <div class="experience-item">
         <div class="item-header">
@@ -97,26 +146,24 @@
       </div>
     </section>
 
-    <!-- New Research Section -->
-    <section class="section">
+    <!-- Research Section -->
+    <section id="research" class="section">
       <h2>🔬 Research</h2>
       <div class="research-item">
         <div class="item-header">
-          <span class="item-title">Comparative Narrative Analysis with Claude 3.7 (Research Assistant)</span>
+          <span class="item-title">Comparative Narrative Analysis with Claude 3.7</span>
           <span class="item-date">Mar. 2025 - Aug. 2025</span>
         </div>
+        <div class="item-subtitle">Research Assistant</div>
         <ul>
           <li>Designed and automated a full Claude 3.7 Sonnet-based LLM evaluation pipeline for 208 narrative pairs
             under four comparison dimensions (conflict, unique, holistic, overlapping)</li>
           <li>Engineered scalable prompt-based inference using anthropic API and batched output parsing, reducing
-            manual
-            judgment workload by over 90%</li>
+            manual judgment workload by over 90%</li>
           <li>Structured model responses into JSON and human-readable formats to enable systematic cross-model
-            analysis
-            and future human annotation</li>
+            analysis and future human annotation</li>
           <li>Collaborated with faculty and research team on dataset preparation, narrative extraction, and
-            designing
-            metrics for minimizing bias in LLM comparison</li>
+            designing metrics for minimizing bias in LLM comparison</li>
         </ul>
       </div>
 
@@ -125,6 +172,7 @@
           <span class="item-title">OEM Controls Automated Angle Test for AS5</span>
           <span class="item-date">Aug. 2023 - May. 2024</span>
         </div>
+        <div class="item-subtitle">Capstone Project Lead</div>
         <ul>
           <li>Led a year-long capstone project to automate Quality Assurance testing for the AS5 sensor system,
             significantly improving testing efficiency and reliability</li>
@@ -133,13 +181,13 @@
           <li>Designed and implemented a seamless UI-Backend integration using APIs, replacing the previous client
             version with a fully automated calibration solution</li>
           <li>Successfully delivered the project, reducing manual testing time by 67% and improving calibration
-            accuracy
-            by 26%, which enhanced overall efficiency and reliability</li>
+            accuracy by 26%, which enhanced overall efficiency and reliability</li>
         </ul>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
       <h2>📚 Projects</h2>
       <div class="project-item">
         <div class="item-header">
@@ -148,16 +196,14 @@
         </div>
         <ul>
           <li>Developed a multi-class image classifier for nine waste categories using Python, TensorFlow/Keras,
-            with an
-            80/20 train/test split and 20% in-training validation for robust model evaluation</li>
+            with an 80/20 train/test split and 20% in-training validation for robust model evaluation</li>
           <li>Built a preprocessing pipeline to resize images and applied extensive data augmentation (random crops,
             zooms, rotations, flips, contrast adjustments, translations) to mitigate overfitting</li>
           <li>Implemented transfer learning by freezing pretrained backbones (ResNet50, ResNet101, EfficientNetB0,
             VGG16) and adding custom FC layers with ReLU, softmax, L2 regularization, batch normalization, and 20%
-            dropout; trained with Adam optimizer and early stopping over 100 epochs</li>
+            dropout</li>
           <li>Evaluated all models on test set using precision, recall, AUC and F1-score; identified VGG16 as the
-            top
-            performer—achieving highest accuracy and generalization—and selected it as the final model</li>
+            top performer—achieving highest accuracy and generalization</li>
         </ul>
       </div>
 
@@ -186,8 +232,7 @@
           <li>Built a semantic search pipeline using Weaviate with text2vec-transformers for vector-based brand
             similarity via GraphQL nearText queries</li>
           <li>Developed a PDF QA chatbot with Streamlit, leveraging PyPDFLoader, ChromaDB, and Hugging Face
-            embeddings
-            in a RAG framework for document-grounded response generation</li>
+            embeddings in a RAG framework for document-grounded response generation</li>
         </ul>
       </div>
 
@@ -201,8 +246,7 @@
             lemmatization)</li>
           <li>Trained TF-IDF (uni + bi-gram) ML models including LinearSVC, Logistic Regression, and Perceptron</li>
           <li>Reproduced and evaluated two GloVe-based representations: 100-d average pooling vs. 1000-d
-            first-10-token
-            concatenation</li>
+            first-10-token concatenation</li>
           <li>Demonstrated that 100-d average pooling generalizes more robustly across unseen reviews</li>
         </ul>
       </div>
@@ -227,18 +271,16 @@
         </div>
         <ul>
           <li>Used Java to build a food ordering app that could generate an invoice with the name and price of the
-            dish
-            and the total price after ordering</li>
+            dish and the total price after ordering</li>
           <li>Group leader, used GitHub to share and merge information and parts of what each group member had
-            finished
-          </li>
+            finished</li>
           <li>Completed a report and made a presentation</li>
         </ul>
       </div>
     </section>
 
-    <!-- Improved Skills Section -->
-    <section class="section">
+    <!-- Skills Section -->
+    <section id="skills" class="section">
       <h2>🔧 Skills</h2>
       <div class="skills-grid">
 
@@ -328,10 +370,22 @@
 
       </div>
     </section>
+
+    <!-- Footer -->
     <footer class="footer">
       <p>&copy; 2025 Dacheng Shen. All rights reserved.</p>
     </footer>
   </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 
 </html>

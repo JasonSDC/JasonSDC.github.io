@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="10" fill="#981E32"/>
+  <text x="50" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">WSU</text>
+  <text x="50" y="65" text-anchor="middle" fill="#5E6A71" font-family="Arial, sans-serif" font-size="10" font-weight="bold">COUGARS</text>
+  <path d="M30 75 L50 85 L70 75" stroke="#5E6A71" stroke-width="3" fill="none"/>
+</svg>
