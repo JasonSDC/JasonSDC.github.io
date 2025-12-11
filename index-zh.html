@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="沈大程 - 华盛顿州立大学计算机科学博士生。专注于AI、Machine Learning和NLP。" />
+    <title>沈大程 | 个人主页</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">DS</a>
+            <a href="index.html" class="lang-switch" title="Switch to English">EN</a>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#education">教育背景</a></li>
+                <li><a href="#experience">工作经历</a></li>
+                <li><a href="#research">科研经历</a></li>
+                <li><a href="#projects">项目经历</a></li>
+                <li><a href="#skills">专业技能</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="SDC1.jpg" alt="沈大程" class="hero-avatar" />
+            <h1 class="hero-title">沈大程</h1>
+            <p class="hero-subtitle">计算机科学博士生</p>
+            <p class="hero-description">
+                热衷于AI、Machine Learning和NLP。目前在华盛顿州立大学攻读博士学位，
+                致力于构建解决现实问题的智能系统。
+            </p>
+            <div class="hero-buttons">
+                <a href="#research" class="btn btn-primary">
+                    <span>🔬</span> 查看科研
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <span>💡</span> 我的项目
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="mailto:jasonshendc@gmail.com" class="social-link" title="邮箱">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/dacheng-shen" target="_blank" class="social-link" title="领英">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/JasonSDC" target="_blank" class="social-link" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://www.google.com/maps/place/Richland,+WA" target="_blank" class="social-link" title="位置">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>🎓 教育背景</h2>
+            <div class="education-item">
+                <div class="education-content">
+                    <img src="wsu_logo.png" alt="WSU Logo" class="school-logo">
+                    <div class="education-details">
+                        <div class="item-header">
+                            <span class="item-title">华盛顿州立大学三城分校</span>
+                            <span class="item-date">2026年1月 - 至今</span>
+                        </div>
+                        <div class="item-subtitle">计算机科学博士</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-content">
+                    <img src="usc.png" alt="USC Logo" class="school-logo">
+                    <div class="education-details">
+                        <div class="item-header">
+                            <span class="item-title">南加州大学</span>
+                            <span class="item-date">2024年6月 - 2025年12月</span>
+                        </div>
+                        <div class="item-subtitle">计算机科学硕士</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-content">
+                    <img src="uconn.png" alt="UConn Logo" class="school-logo">
+                    <div class="education-details">
+                        <div class="item-header">
+                            <span class="item-title">康涅狄格大学</span>
+                            <span class="item-date">2020年9月 - 2024年5月</span>
+                        </div>
+                        <div class="item-subtitle">计算机科学学士</div>
+                        <div style="color: var(--accent-teal); font-weight: 500;">院长荣誉名单</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2>💼 工作经历</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">软件开发工程师</span>
+                    <span class="item-date">2023年7月 - 2023年8月</span>
+                </div>
+                <div class="item-subtitle">海科佳智能装备技术有限公司</div>
+                <ul>
+                    <li>负责后端和服务器维护</li>
+                    <li>更新框架，优化用户界面和性能</li>
+                    <li>配置数据库权限和安全策略</li>
+                    <li>主导UI开发，用户满意度提升32%</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <h2>🔬 科研经历</h2>
+            <div class="research-item">
+                <div class="item-header">
+                    <span class="item-title">基于Claude 3.7的叙事比较分析</span>
+                    <span class="item-date">2025年3月 - 2025年8月</span>
+                </div>
+                <div class="item-subtitle">研究助理</div>
+                <ul>
+                    <li>设计并自动化了基于Claude 3.7 Sonnet的LLM评估流程，对208对叙事在四个比较维度（冲突、独特、整体、重叠）进行分析</li>
+                    <li>使用Anthropic API构建可扩展的基于提示的推理系统，并进行批量输出解析，将人工评判工作量减少90%以上</li>
+                    <li>将模型响应结构化为JSON和人类可读格式，以实现系统性的跨模型分析和未来的人工标注</li>
+                    <li>与教授和研究团队合作进行数据集准备、叙事提取，以及设计减少LLM比较偏差的评估指标</li>
+                </ul>
+            </div>
+
+            <div class="research-item">
+                <div class="item-header">
+                    <span class="item-title">OEM Controls AS5传感器自动化角度测试</span>
+                    <span class="item-date">2023年8月 - 2024年5月</span>
+                </div>
+                <div class="item-subtitle">毕业设计项目负责人</div>
+                <ul>
+                    <li>领导为期一年的毕业设计项目，为AS5传感器系统自动化质量保证测试，显著提高了测试效率和可靠性</li>
+                    <li>在Ubuntu上开发基于Python的控制系统，操控六轴机械臂，自动化传感器校准和测试程序，提供精确的"通过/失败"反馈和实时结果记录</li>
+                    <li>设计并实现了使用API的无缝UI-后端集成，用全自动校准解决方案替代了之前的客户端版本</li>
+                    <li>成功交付项目，将手动测试时间减少67%，校准精度提高26%，整体提升了效率和可靠性</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>📚 项目经历</h2>
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">迁移学习实现垃圾分类</span>
+                    <span class="item-date">2025年1月 - 2025年5月</span>
+                </div>
+                <ul>
+                    <li>使用Python、TensorFlow/Keras开发了九类垃圾图像分类器，采用80/20训练测试划分和20%训练内验证进行稳健的模型评估</li>
+                    <li>构建了图像预处理流程，应用数据增强技术（随机裁剪、缩放、旋转、翻转、对比度调整、平移）以减少过拟合</li>
+                    <li>通过冻结预训练骨干网络（ResNet50、ResNet101、EfficientNetB0、VGG16），添加自定义全连接层，包含ReLU、softmax、L2正则化、批归一化和20%的Dropout实现迁移学习
+                    </li>
+                    <li>使用精确率、召回率、AUC和F1分数在测试集上评估所有模型；确定VGG16表现最佳，达到最高准确率和泛化能力</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">AI驱动智能出行助手设计 - FlySmart</span>
+                    <span class="item-date">2025年3月 - 2025年5月</span>
+                </div>
+                <ul>
+                    <li>主导需求工程项目，设计AI驱动的航班预订助手</li>
+                    <li>进行利益相关者分析、问卷调查和访谈，推导用户画像、同理心地图并分类需求</li>
+                    <li>使用Figma创建并验证原型，功能包括航班搜索、签证管理、智能提醒和个性化AI聊天界面</li>
+                    <li>应用敏捷方法论，使用故事驱动的待办列表、基于冲刺的开发路线图，通过可用性测试和原型验证进行正式验证</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">基于Weaviate和RAG的语义检索与问答系统</span>
+                    <span class="item-date">2024年9月 - 2024年12月</span>
+                </div>
+                <ul>
+                    <li>使用Weaviate和text2vec-transformers构建语义搜索管道，通过GraphQL nearText查询实现基于向量的品牌相似度搜索</li>
+                    <li>使用Streamlit开发PDF问答聊天机器人，利用PyPDFLoader、ChromaDB和Hugging Face嵌入，在RAG框架中实现基于文档的响应生成</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">亚马逊办公产品评论大规模情感分析</span>
+                    <span class="item-date">2025年8月 - 2025年10月</span>
+                </div>
+                <ul>
+                    <li>清洗和标准化20万+评论文本（正则表达式去除HTML/URL、分词、停用词过滤、词形还原）</li>
+                    <li>训练TF-IDF（一元+二元语法）机器学习模型，包括LinearSVC、逻辑回归和感知机</li>
+                    <li>复现并评估两种GloVe表示方法：100维平均池化与1000维前10词拼接</li>
+                    <li>证明100维平均池化在未见评论上具有更强的泛化能力</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">学生管理系统设计</span>
+                    <span class="item-date">2023年9月 - 2024年12月</span>
+                </div>
+                <ul>
+                    <li>团队协作项目，使用Figma设计产品模型并向利益相关者展示方案</li>
+                    <li>开发并实现代码，将每个Figma设计功能转化为实际产品</li>
+                    <li>完成网站开发并全面测试所有功能</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">点餐应用设计</span>
+                    <span class="item-date">2021年8月 - 2021年11月</span>
+                </div>
+                <ul>
+                    <li>使用Java构建点餐应用，可在下单后生成包含菜品名称、价格和总价的发票</li>
+                    <li>担任小组组长，使用GitHub分享和合并各成员完成的信息和代码部分</li>
+                    <li>完成项目报告并进行展示</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>🔧 专业技能</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <span class="skill-icon">💻</span>
+                        <h3 class="skill-title">编程语言</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <span class="skill-icon">🤖</span>
+                        <h3 class="skill-title">AI / ML / NLP</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Transfer Learning</span>
+                        <span class="skill-tag">LLM Prompting</span>
+                        <span class="skill-tag">Semantic Search</span>
+                        <span class="skill-tag">MapReduce</span>
+                        <span class="skill-tag">Model Evaluation</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">NLTK</span>
+                        <span class="skill-tag">Gensim</span>
+                        <span class="skill-tag">scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <span class="skill-icon">🗄️</span>
+                        <h3 class="skill-title">Data & Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">ChromaDB</span>
+                        <span class="skill-tag">Weaviate</span>
+                        <span class="skill-tag">Web Crawling</span>
+                        <span class="skill-tag">Data Preprocessing</span>
+                        <span class="skill-tag">JSON Parsing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <span class="skill-icon">📐</span>
+                        <h3 class="skill-title">Software Design</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Modular Architecture</span>
+                        <span class="skill-tag">UML</span>
+                        <span class="skill-tag">Agile (Scrum)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <span class="skill-icon">🛠️</span>
+                        <h3 class="skill-title">Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Trello</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Microsoft Office Suite</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Lightroom</span>
+                        <span class="skill-tag">Photoshop</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 沈大程. 保留所有权利。</p>
+        </footer>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" title="返回顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

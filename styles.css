@@ -32,10 +32,10 @@
     --text-white: #ffffff;
 
     /* Background Colors */
-    --bg-body: #f0f4f8;
-    --bg-card: rgba(255, 255, 255, 0.85);
-    --bg-card-hover: rgba(255, 255, 255, 0.95);
-    --bg-glass: rgba(255, 255, 255, 0.25);
+    --bg-body: #0f172a;
+    --bg-card: rgba(15, 23, 42, 0.75);
+    --bg-card-hover: rgba(30, 41, 59, 0.85);
+    --bg-glass: rgba(15, 23, 42, 0.4);
 
     /* Border and Shadow */
     --border-color: rgba(102, 126, 234, 0.2);
@@ -83,7 +83,7 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0c4a6e 100%);
     background-attachment: fixed;
     color: var(--text-main);
     line-height: 1.7;
@@ -120,6 +120,63 @@ body::before {
     50% {
         opacity: 0.8;
         transform: scale(1.1);
+    }
+}
+
+/* Meteor Shower Effect */
+.meteor-shower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.meteor {
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    transform: rotate(45deg);
+    animation: meteorFall linear forwards;
+    opacity: 0;
+    filter: blur(0.5px);
+    box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meteor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes meteorFall {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translateY(0);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translateY(100vh);
     }
 }
 
@@ -163,6 +220,37 @@ body::before {
 
 .navbar.scrolled .nav-logo {
     color: var(--primary-color);
+}
+
+/* Language Switch Button */
+.lang-switch {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-sm);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    margin-left: 0.75rem;
+    transition: all var(--transition-fast);
+}
+
+.lang-switch:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--text-white);
+    color: var(--text-white);
+}
+
+.navbar.scrolled .lang-switch {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.navbar.scrolled .lang-switch:hover {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
 }
 
 .nav-links {
@@ -544,7 +632,7 @@ h2 {
 .item-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--text-main);
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .item-date {
@@ -572,7 +660,7 @@ li {
     position: relative;
     padding-left: 1.5em;
     margin-bottom: 0.6em;
-    color: var(--text-secondary);
+    color: rgba(203, 213, 225, 0.9);
     line-height: 1.6;
 }
 
@@ -624,7 +712,7 @@ li::before {
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--text-main);
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .skill-tags {
@@ -635,19 +723,21 @@ li::before {
 
 .skill-tag {
     font-size: 0.85rem;
-    background: linear-gradient(135deg, var(--primary-light), #e8e0ff);
-    color: var(--primary-dark);
+    background: rgba(100, 116, 139, 0.4);
+    color: rgba(255, 255, 255, 0.9);
     padding: 6px 14px;
     border-radius: var(--radius-xl);
     font-weight: 500;
     transition: all var(--transition-fast);
     cursor: default;
+    border: 1px solid rgba(148, 163, 184, 0.3);
 }
 
 .skill-tag:hover {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-purple));
+    background: rgba(100, 116, 139, 0.6);
     color: var(--text-white);
     transform: translateY(-2px);
+    border-color: rgba(148, 163, 184, 0.5);
 }
 
 /* Contact Section */

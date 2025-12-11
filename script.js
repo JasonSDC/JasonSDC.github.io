@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initScrollProgress();
     initBackToTop();
+    initMeteorShower();
 });
 
 /**
@@ -202,3 +203,63 @@ window.addEventListener('scroll', () => {
         hero.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
     }
 });
+
+/**
+ * Meteor Shower Effect
+ * Creates falling meteors from top-left to bottom-right
+ */
+function initMeteorShower() {
+    // Create meteor shower container
+    const meteorShower = document.createElement('div');
+    meteorShower.className = 'meteor-shower';
+    document.body.insertBefore(meteorShower, document.body.firstChild);
+
+    // Meteor creation function
+    function createMeteor() {
+        const meteor = document.createElement('div');
+        meteor.className = 'meteor';
+
+        // Random starting position (full screen coverage)
+        const startX = Math.random() * (window.innerWidth + 200) - 100;
+        const startY = Math.random() * window.innerHeight * 0.5 - 150;
+
+        // Random properties for variety
+        const duration = 1.5 + Math.random() * 1.5; // 1.5-3 seconds
+        const size = 0.5 + Math.random() * 0.8; // Scale variation
+        const delay = Math.random() * 0.3;
+
+        meteor.style.left = `${startX}px`;
+        meteor.style.top = `${startY}px`;
+        meteor.style.animationDuration = `${duration}s`;
+        meteor.style.animationDelay = `${delay}s`;
+        meteor.style.transform = `rotate(45deg) scale(${size})`;
+
+        meteorShower.appendChild(meteor);
+
+        // Remove meteor after animation completes
+        setTimeout(() => {
+            if (meteor.parentNode) {
+                meteor.remove();
+            }
+        }, (duration + delay) * 1000 + 100);
+    }
+
+    // Create meteors at intervals (moderate frequency)
+    function startMeteorShower() {
+        // Initial burst of a few meteors
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createMeteor, i * 300);
+        }
+
+        // Continue creating meteors at moderate intervals
+        setInterval(() => {
+            // Random chance to create 1-3 meteors
+            const meteorCount = 1 + Math.floor(Math.random() * 3);
+            for (let i = 0; i < meteorCount; i++) {
+                setTimeout(createMeteor, i * 200);
+            }
+        }, 800 + Math.random() * 700); // Every 0.8-1.5 seconds
+    }
+
+    startMeteorShower();
+}
