@@ -610,7 +610,6 @@ h2 {
 .research-item:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
-    background: var(--bg-card-hover);
 }
 
 .education-item:hover::before,
@@ -660,7 +659,7 @@ li {
     position: relative;
     padding-left: 1.5em;
     margin-bottom: 0.6em;
-    color: rgba(203, 213, 225, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     line-height: 1.6;
 }
 
