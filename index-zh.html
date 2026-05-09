@@ -166,11 +166,26 @@
             <h2>🔬 科研经历</h2>
             <div class="research-item">
                 <div class="item-header">
+                    <span class="item-title">LLM引导的电网N-1故障缓解</span>
+                    <span class="item-date">2026年1月 - 2026年4月</span>
+                </div>
+                <div class="item-subtitle">研究助理 / 博士研究员</div>
+                <ul>
+                    <li>设计了一个在N-1可靠性准则下的灾后电网恢复LLM引导决策框架，旨在缓解紧急运行条件下的过载问题。</li>
+                    <li>将LLM与基于AC-OPF的验证和运行时保证检查相集成，以生成、验证并优化稀疏的发电机重调度动作。</li>
+                    <li>在IEEE基准电力系统上，针对分布内和分布外的故障场景开发并评估了该框架，并与基于OPF和基于规则的基准方法进行了比较。</li>
+                    <li>证明了在安全约束下恢复成功率的提高和控制成本的降低，突出了LLM辅助决策支持在信息物理电力系统中的可行性。</li>
+                </ul>
+            </div>
+            <div class="research-item">
+                <div class="item-header">
                     <span class="item-title"><a href="https://labrai.github.io/PyHazards/" target="_blank"
-                            style="color: inherit; text-decoration: none;">PyHazards：AI驱动的自然灾害预测框架</a></span>
+                            style="color: inherit; text-decoration: none;">PyHazards：AI驱动的自然灾害预测框架 🔗</a></span>
                     <span class="item-date">2025年9月 - 2026年1月</span>
                 </div>
-                <div class="item-subtitle">研究助理</div>
+                <div class="item-subtitle"><a href="https://viterbi-web.usc.edu/~yzhao010/lab.html" target="_blank"
+                        style="color: inherit; text-decoration: none;">研究助理，南加州大学 FORTIS 实验室 (PI: Prof. Yue Zhao) 🔗</a>
+                </div>
                 <ul>
                     <li>将基于Transformer的预测学习算法工程化并集成到PyHazards中，这是一个用于自然灾害预测的开源Python工具包。</li>
                     <li>开发可扩展的机器学习模块用于复杂数据处理，评估Transformer模型相对于各类公开基线的预测性能。</li>
@@ -181,9 +196,11 @@
             <div class="research-item">
                 <div class="item-header">
                     <span class="item-title">基于Claude 3.7的叙事比较分析</span>
-                    <span class="item-date">2025年3月 - 2025年8月</span>
+                    <span class="item-date">2025年3月 - 2025年6月</span>
                 </div>
-                <div class="item-subtitle">研究助理</div>
+                <div class="item-subtitle"><a href="https://viterbi-web.usc.edu/~yzhao010/lab.html" target="_blank"
+                        style="color: inherit; text-decoration: none;">研究助理，南加州大学 FORTIS 实验室 (PI: Prof. Yue Zhao) 🔗</a>
+                </div>
                 <ul>
                     <li>设计并自动化了基于Claude 3.7 Sonnet的LLM评估流程，对208对叙事在四个比较维度（冲突、独特、整体、重叠）进行分析</li>
                     <li>使用Anthropic API构建可扩展的基于提示的推理系统，并进行批量输出解析，将人工评判工作量减少90%以上</li>
@@ -197,7 +214,7 @@
                     <span class="item-title"><a
                             href="https://seniordesignday.engr.uconn.edu/seniorprojectpt/senior-design-2024-computer-science-and-engineering-team-39/"
                             target="_blank" style="color: inherit; text-decoration: none;">OEM Controls
-                            AS5传感器自动化角度测试</a></span>
+                            AS5传感器自动化角度测试 🔗</a></span>
                     <span class="item-date">2023年8月 - 2024年5月</span>
                 </div>
                 <div class="item-subtitle">毕业设计项目负责人</div>
@@ -215,15 +232,14 @@
             <h2>📚 项目经历</h2>
             <div class="project-item">
                 <div class="item-header">
-                    <span class="item-title">迁移学习实现垃圾分类</span>
+                    <span class="item-title">基于迁移学习的不平衡垃圾分类</span>
                     <span class="item-date">2025年1月 - 2025年5月</span>
                 </div>
                 <ul>
-                    <li>使用Python、TensorFlow/Keras开发了九类垃圾图像分类器，采用80/20训练测试划分和20%训练内验证进行稳健的模型评估</li>
-                    <li>构建了图像预处理流程，应用数据增强技术（随机裁剪、缩放、旋转、翻转、对比度调整、平移）以减少过拟合</li>
-                    <li>通过冻结预训练骨干网络（ResNet50、ResNet101、EfficientNetB0、VGG16），添加自定义全连接层，包含ReLU、softmax、L2正则化、批归一化和20%的Dropout实现迁移学习
-                    </li>
-                    <li>使用精确率、召回率、AUC和F1分数在测试集上评估所有模型；确定VGG16表现最佳，达到最高准确率和泛化能力</li>
+                    <li>在包含9个类别的RealWaste数据集上，对VGG16的三种迁移学习策略进行了受控消融实验，采用分层64/16/20的数据划分，并构建了自定义分类头。</li>
+                    <li>对比了冻结主干网络与微调block5的效果，以及使用逆频率类别权重与RandomOverSampler（随机过采样）处理长尾分布的效果；使用代价敏感权重进行微调，将测试准确率从60.6%提高到69.9%，Macro
+                        F1提升了10.3个百分点。</li>
+                    <li>基于混淆矩阵进行了错误分析，识别出难以区分的细粒度边界（塑料/金属，纸张/纸板），并提出了具有类别选择性的混合不平衡策略作为后续改进方案。</li>
                 </ul>
             </div>
 
@@ -253,7 +269,10 @@
 
             <div class="project-item">
                 <div class="item-header">
-                    <span class="item-title"><a href="https://github.com/JasonSDC/Sentiment-Analysis-on-Amazon-Office-Reviews" target="_blank" style="color: inherit; text-decoration: none;">亚马逊办公产品评论大规模情感分析</a></span>
+                    <span class="item-title"><a
+                            href="https://github.com/JasonSDC/Sentiment-Analysis-on-Amazon-Office-Reviews"
+                            target="_blank" style="color: inherit; text-decoration: none;">亚马逊办公产品评论大规模情感分析
+                            🔗</a></span>
                     <span class="item-date">2025年8月 - 2025年10月</span>
                 </div>
                 <ul>
