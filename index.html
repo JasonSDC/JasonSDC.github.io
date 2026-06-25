@@ -173,14 +173,9 @@
         </div>
         <div class="item-subtitle">Research Assistant / Ph.D. Researcher</div>
         <ul>
-          <li>Designed an LLM-guided decision framework for post-contingency power grid restoration under the N-1
-            reliability criterion, targeting overload mitigation in emergency operating conditions.</li>
-          <li>Integrated large language models with AC-OPF-based verification and runtime assurance checks to generate,
-            validate, and refine sparse generator redispatch actions.</li>
-          <li>Developed and evaluated the framework on IEEE benchmark power systems under both in-distribution and
-            out-of-distribution contingency scenarios, comparing against OPF-based and rule-based baselines.</li>
-          <li>Demonstrated improved restoration success rate and reduced control cost under safety constraints,
-            highlighting the feasibility of LLM-assisted decision support for cyber-physical power systems.</li>
+          <li>Designed an LLM-guided decision framework for post-contingency power grid restoration under N-1 reliability, integrating AC-OPF verification and runtime assurance to generate and refine sparse generator redispatch actions.</li>
+          <li>Evaluated on IEEE benchmark systems under in-distribution and out-of-distribution contingency scenarios, benchmarking against OPF-based and rule-based baselines.</li>
+          <li>Achieved improved restoration success rate and reduced control cost under safety constraints, demonstrating LLM-assisted decision support for cyber-physical power systems.</li>
         </ul>
       </div>
       <div class="research-item">
@@ -194,12 +189,9 @@
             style="color: inherit; text-decoration: none;">Research Assistant, FORTIS Lab at USC (PI: Prof. Yue Zhao)
             🔗</a></div>
         <ul>
-          <li>Engineered and integrated Transformer-based prediction learning algorithms into PyHazards, an open-source
-            Python toolkit for natural hazard forecasting.</li>
-          <li>Developed scalable machine learning modules for complex data processing, evaluating the Transformer
-            model's predictive performance against various public baselines.</li>
-          <li>Collaborated with the RAI Lab research team to standardize the AI prediction pipeline, significantly
-            enhancing the framework's overall accuracy and scalability.</li>
+          <li>Integrated Transformer-based models into PyHazards, an open-source Python library for multi-hazard prediction.</li>
+          <li>Developed modular data, training, and evaluation pipelines and benchmarked model performance against public baselines.</li>
+          <li>Standardized model interfaces and experiment workflows with the RAI Lab team to improve reproducibility and extensibility.</li>
         </ul>
       </div>
 
@@ -212,14 +204,9 @@
             style="color: inherit; text-decoration: none;">Research Assistant, FORTIS Lab at USC (PI: Prof. Yue Zhao)
             🔗</a></div>
         <ul>
-          <li>Designed and automated a full Claude 3.7 Sonnet-based LLM evaluation pipeline for 208 narrative pairs
-            under four comparison dimensions (conflict, unique, holistic, overlapping)</li>
-          <li>Engineered scalable prompt-based inference using anthropic API and batched output parsing, reducing
-            manual judgment workload by over 90%</li>
-          <li>Structured model responses into JSON and human-readable formats to enable systematic cross-model
-            analysis and future human annotation</li>
-          <li>Collaborated with faculty and research team on dataset preparation, narrative extraction, and
-            designing metrics for minimizing bias in LLM comparison</li>
+          <li>Designed and automated a Claude 3.7 Sonnet-based narrative comparison pipeline for 13 news-story pairs, generating 208 structured outputs across conflict, unique, holistic, and overlapping dimensions with four prompt levels.</li>
+          <li>Implemented scalable inference through the Anthropic API with automated output parsing, organizing responses into structured JSON and human-readable text for systematic downstream analysis and annotation.</li>
+          <li>Developed multi-level prompt rubrics incorporating relevance, factual consistency, coherence, fluency, and bias criteria to support more reliable narrative comparison and subsequent human evaluation.</li>
         </ul>
       </div>
 
@@ -233,14 +220,8 @@
         </div>
         <div class="item-subtitle">Capstone Project Lead</div>
         <ul>
-          <li>Led a year-long capstone project to automate Quality Assurance testing for the AS5 sensor system,
-            significantly improving testing efficiency and reliability</li>
-          <li>Developed a Python-based control system on Ubuntu to operate a 6-axis robot arm, automating sensor
-            calibration and test procedures with precise "Pass/Fail" feedback and real-time result logging</li>
-          <li>Designed and implemented a seamless UI-Backend integration using APIs, replacing the previous client
-            version with a fully automated calibration solution</li>
-          <li>Successfully delivered the project, reducing manual testing time by 67% and improving calibration
-            accuracy by 26%, which enhanced overall efficiency and reliability</li>
+          <li>Led the design of a Python-based automation system on Ubuntu for calibrating and testing OEM Controls' AS5 angle sensor with a UFACTORY xArm 6.</li>
+          <li>Integrated a Tkinter GUI, robotic-arm API, CANOpen sensor communication, real-time progress monitoring, and CSV result logging to automate testing from −80° to 80° in 5° increments.</li>
         </ul>
       </div>
     </section>
@@ -269,13 +250,9 @@
           <span class="item-date">Jan. 2025 - May 2025</span>
         </div>
         <ul>
-          <li>Conducted a controlled ablation of three transfer learning strategies on VGG16 over the 9-class RealWaste
-            dataset, with stratified 64/16/20 splits and a custom classification head.</li>
-          <li>Compared frozen-backbone vs. block5 fine-tuning, and inverse-frequency class weights vs. RandomOverSampler
-            for long-tailed correction; fine-tuning with cost-sensitive weights raised test accuracy from 60.6% to 69.9%
-            and Macro F1 by +10.3 pp.</li>
-          <li>Performed confusion-matrix-based error analysis identifying persistent fine-grained boundaries
-            (Plastic/Metal, Paper/Cardboard) and proposed a class-selective hybrid imbalance strategy as follow-up.</li>
+          <li>Conducted a controlled ablation of three VGG16-based training configurations on the 9-class, 4,752-image RealWaste dataset, using stratified train/validation/test splits and a custom classification head.</li>
+          <li>Compared frozen-backbone and block5 fine-tuning strategies with inverse-frequency class weights and RandomOverSampler across three configurations; fine-tuning with cost-sensitive weights improved test accuracy from 60.6% to 69.9% and Macro F1 by 10.3 pp.</li>
+          <li>Performed confusion-matrix-based error analysis revealing persistent inter-class confusions, including Plastic/Metal and Paper/Cardboard, and proposed a class-selective hybrid imbalance strategy for future work.</li>
         </ul>
       </div>
 
@@ -301,10 +278,9 @@
           <span class="item-date">Sep. 2024 - Dec 2024</span>
         </div>
         <ul>
-          <li>Built a semantic search pipeline using Weaviate with text2vec-transformers for vector-based brand
-            similarity via GraphQL nearText queries</li>
-          <li>Developed a PDF QA chatbot with Streamlit, leveraging PyPDFLoader, ChromaDB, and Hugging Face
-            embeddings in a RAG framework for document-grounded response generation</li>
+          <li>Built a semantic search pipeline using Weaviate with text2vec-transformers for vector-based brand similarity via GraphQL nearText queries.</li>
+          <li>Developed a PDF QA chatbot with Streamlit using PyPDFLoader, ChromaDB, and Hugging Face embeddings in a RAG framework, and benchmarked Weaviate vs. ChromaDB on retrieval accuracy and scalability.</li>
+          <li>Automated ingestion and querying with Python and Bash, orchestrating deployment with Docker Compose.</li>
         </ul>
       </div>
 
@@ -316,12 +292,8 @@
           <span class="item-date">Aug. 2025 - Oct. 2025</span>
         </div>
         <ul>
-          <li>Cleaned and normalized 200k+ review texts (regex HTML/URL removal, tokenization, stopword filtering,
-            lemmatization)</li>
-          <li>Trained TF-IDF (uni + bi-gram) ML models including LinearSVC, Logistic Regression, and Perceptron</li>
-          <li>Reproduced and evaluated two GloVe-based representations: 100-d average pooling vs. 1000-d
-            first-10-token concatenation</li>
-          <li>Demonstrated that 100-d average pooling generalizes more robustly across unseen reviews</li>
+          <li>Cleaned and normalized 200K balanced Amazon review texts through HTML/URL removal, tokenization, stopword filtering, and lemmatization; trained unigram TF-IDF models with LinearSVC, Logistic Regression, and Perceptron, achieving 89.6% test accuracy.</li>
+          <li>Compared two GloVe representations using a feed-forward neural network—100-d average pooling and 1000-d concatenation of the first 10 tokens—showing that average pooling improved test accuracy from 77.7% to 83.3% and reduced overfitting.</li>
         </ul>
       </div>
 
