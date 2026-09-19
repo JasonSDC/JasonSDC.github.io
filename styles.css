@@ -672,6 +672,54 @@ li::before {
     top: 0;
 }
 
+/* Research grouped by institution */
+.research-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.research-group-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.research-group-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: var(--radius-sm);
+    background: white;
+    padding: 6px;
+    box-shadow: var(--shadow-sm);
+}
+
+.research-group-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+.research-group-meta {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--accent-teal);
+}
+
+.research-group .research-item {
+    margin-left: var(--spacing-md);
+}
+
+@media (max-width: 480px) {
+    .research-group .research-item {
+        margin-left: 0;
+    }
+}
+
 /* Skills Grid */
 .skills-grid {
     display: grid;

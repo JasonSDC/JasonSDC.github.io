@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Dacheng Shen - Computer Science Ph.D. Student at WSU. Specializing in AI, Machine Learning, and NLP." />
+    content="Dacheng Shen - Computer Science researcher working on trustworthy AI, reinforcement learning, and cyber-physical systems." />
   <title>Dacheng Shen | Academic Homepage</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -41,10 +41,10 @@
     <div class="hero-content">
       <img src="SDC1.jpg" alt="Dacheng Shen" class="hero-avatar" />
       <h1 class="hero-title">Dacheng Shen</h1>
-      <p class="hero-subtitle">Computer Science Ph.D. Student</p>
+      <p class="hero-subtitle">Computer Science Researcher</p>
       <p class="hero-description">
-        Passionate about AI, Machine Learning, and NLP. Currently pursuing my Ph.D. at Washington State University,
-        building intelligent systems that solve real-world problems.
+        Working on trustworthy AI, reinforcement learning, and cyber-physical systems &mdash; from adversarially robust
+        robot locomotion to LLM-guided control for power grids.
       </p>
       <div class="hero-buttons">
         <a href="#research" class="btn btn-primary">
@@ -91,26 +91,13 @@
       <h2>🎓 Education</h2>
       <div class="education-item">
         <div class="education-content">
-          <img src="wsu_logo.png" alt="WSU Logo" class="school-logo">
-          <div class="education-details">
-            <div class="item-header">
-              <span class="item-title">Washington State University, Tri-Cities</span>
-              <span class="item-date">Jan 2026 - Present</span>
-            </div>
-            <div class="item-subtitle">Ph.D. in Computer Science</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="education-item">
-        <div class="education-content">
           <img src="usc.png" alt="USC Logo" class="school-logo">
           <div class="education-details">
             <div class="item-header">
               <span class="item-title">University of Southern California</span>
               <span class="item-date">June 2024 - Dec 2025</span>
             </div>
-            <div class="item-subtitle">M.S. in Computer Science</div>
+            <div class="item-subtitle">M.S. in Computer Science &mdash; GPA 3.77/4.0</div>
           </div>
         </div>
       </div>
@@ -123,7 +110,7 @@
               <span class="item-title">University of Connecticut</span>
               <span class="item-date">Sept 2020 - May 2024</span>
             </div>
-            <div class="item-subtitle">B.S. in Computer Science</div>
+            <div class="item-subtitle">B.S. in Computer Science &mdash; GPA 3.65/4.0</div>
             <div style="color: var(--accent-teal); font-weight: 500;">Dean's List Honors</div>
           </div>
         </div>
@@ -135,15 +122,26 @@
       <h2>📄 Publications, Preprints &amp; Presentations</h2>
       <div class="research-item">
         <div class="item-header">
+          <span class="item-title">DTRL: Reinforcement Learning Framework for Cyber-Physical Systems with Dynamic
+            Time Requirements</span>
+          <span class="item-date">2026</span>
+        </div>
+        <div class="item-subtitle">IEEE Real-Time Systems Symposium (RTSS), 2026 &mdash; Accepted</div>
+        <ul>
+          <li>Yufeng Yang, <strong>Dacheng Shen</strong>, Mengyu Liu.</li>
+        </ul>
+      </div>
+      <div class="research-item">
+        <div class="item-header">
           <span class="item-title"><a href="https://doi.org/10.36190/2026.04" target="_blank"
               style="color: inherit; text-decoration: none;">The Trafficker's Pitch: Detecting Deceptive Recruitment in
-              Online Job Boards 🔗</a></span>
+              Online Job Boards</a></span>
           <span class="item-date">2026</span>
         </div>
         <div class="item-subtitle">CySoc Workshop at AAAI ICWSM, 2026</div>
         <ul>
           <li>Siyi Zhou, Peiran Qiu, Tanishq Salkar, Leonardo Blas Urrutia,
-            <strong>Dacheng Shen</strong>, Deyang Hsu, Eun Cheol Choi, and Emilio Ferrara.
+            <strong>Dacheng Shen</strong>, Nora Adadurova, Deyang Hsu, Eun Cheol Choi, and Emilio Ferrara.
           </li>
         </ul>
       </div>
@@ -165,63 +163,119 @@
     <!-- Research Section -->
     <section id="research" class="section">
       <h2>🔬 Research</h2>
-      <div class="research-item">
-        <div class="item-header">
-          <span class="item-title">LLM-Guided Power Grid Contingency Mitigation</span>
-          <span class="item-date">Jan. 2026 - Apr. 2026</span>
+
+      <div class="research-group">
+        <div class="research-group-header">
+          <img src="wsu_logo.png" alt="WSU Logo" class="research-group-logo">
+          <div>
+            <h3 class="research-group-title">Washington State University</h3>
+            <div class="research-group-meta">Research Assistant &middot; Richland, WA &middot; Jan. 2026 - Sep. 2026
+            </div>
+          </div>
         </div>
-        <div class="item-subtitle">Research Assistant / Ph.D. Researcher</div>
-        <ul>
-          <li>Designed an LLM-guided decision framework for post-contingency power grid restoration under N-1 reliability, integrating AC-OPF verification and runtime assurance to generate and refine sparse generator redispatch actions.</li>
-          <li>Evaluated on IEEE benchmark systems under in-distribution and out-of-distribution contingency scenarios, benchmarking against OPF-based and rule-based baselines.</li>
-          <li>Achieved improved restoration success rate and reduced control cost under safety constraints, demonstrating LLM-assisted decision support for cyber-physical power systems.</li>
-        </ul>
-      </div>
-      <div class="research-item">
-        <div class="item-header">
-          <span class="item-title"><a href="https://labrai.github.io/PyHazards/" target="_blank"
-              style="color: inherit; text-decoration: none;">PyHazards: AI-Powered Hazard Prediction
-              Framework 🔗</a></span>
-          <span class="item-date">Sep. 2025 - Jan. 2026</span>
+
+        <div class="research-item">
+          <div class="item-header">
+            <span class="item-title"><a href="https://github.com/JasonSDC/Go2_heightscan_adversary_retrain"
+                target="_blank" style="color: inherit; text-decoration: none;">Adversarial Robustness of RL-Based
+                Quadruped Locomotion</a></span>
+            <span class="item-date">Apr. 2026 - Aug. 2026</span>
+          </div>
+          <ul>
+            <li>Investigated observation-level adversarial attacks on terrain perception for RL-based quadruped
+              locomotion, demonstrating physically induced failures through compromised dynamic balance.</li>
+            <li>Developed a reinforcement learning-based adversary that generates physically realizable,
+              budget-constrained terrain perturbations, and improved robustness through adversarial retraining.</li>
+          </ul>
         </div>
-        <div class="item-subtitle"><a href="https://viterbi-web.usc.edu/~yzhao010/lab.html" target="_blank"
-            style="color: inherit; text-decoration: none;">Research Assistant, FORTIS Lab at USC (PI: Prof. Yue Zhao)
-            🔗</a></div>
-        <ul>
-          <li>Integrated Transformer-based models into PyHazards, an open-source Python library for multi-hazard prediction.</li>
-          <li>Developed modular data, training, and evaluation pipelines and benchmarked model performance against public baselines.</li>
-          <li>Standardized model interfaces and experiment workflows with the RAI Lab team to improve reproducibility and extensibility.</li>
-        </ul>
+
+        <div class="research-item">
+          <div class="item-header">
+            <span class="item-title"><a href="https://github.com/JasonSDC/LLM_N1_Grid_Control" target="_blank"
+                style="color: inherit; text-decoration: none;">LLM-Guided Emergency Control for Power Grid
+                Contingencies</a></span>
+            <span class="item-date">Jan. 2026 - Apr. 2026</span>
+          </div>
+          <ul>
+            <li>Built an LLM + physics pipeline for IEEE 39-bus contingency mitigation, combining sparse generator
+              selection, sensitivity-based SLP mapping, AC power-flow safety checks, and load-shedding fallback.</li>
+            <li>Benchmarked against AC-OPF and rule+SLP baselines across in-distribution and out-of-distribution N-1/N-2
+              scenarios with load perturbations.</li>
+            <li>Achieved 95% success while using substantially fewer control actions than AC-OPF with significantly
+              lower evaluation cost.</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="research-item">
-        <div class="item-header">
-          <span class="item-title">Comparative Narrative Analysis with Claude 3.7</span>
-          <span class="item-date">Mar. 2025 - Jun. 2025</span>
+      <div class="research-group">
+        <div class="research-group-header">
+          <img src="usc.png" alt="USC Logo" class="research-group-logo">
+          <div>
+            <h3 class="research-group-title">University of Southern California</h3>
+            <div class="research-group-meta"><a href="https://viterbi-web.usc.edu/~yzhao010/lab.html" target="_blank"
+                style="color: inherit; text-decoration: none;">Research Assistant, FORTIS Lab (PI: Prof. Yue
+                Zhao)</a> &middot; Los Angeles, CA &middot; Mar. 2025 - Jan. 2026</div>
+          </div>
         </div>
-        <div class="item-subtitle"><a href="https://viterbi-web.usc.edu/~yzhao010/lab.html" target="_blank"
-            style="color: inherit; text-decoration: none;">Research Assistant, FORTIS Lab at USC (PI: Prof. Yue Zhao)
-            🔗</a></div>
-        <ul>
-          <li>Designed and automated a Claude 3.7 Sonnet-based narrative comparison pipeline for 13 news-story pairs, generating 208 structured outputs across conflict, unique, holistic, and overlapping dimensions with four prompt levels.</li>
-          <li>Implemented scalable inference through the Anthropic API with automated output parsing, organizing responses into structured JSON and human-readable text for systematic downstream analysis and annotation.</li>
-          <li>Developed multi-level prompt rubrics incorporating relevance, factual consistency, coherence, fluency, and bias criteria to support more reliable narrative comparison and subsequent human evaluation.</li>
-        </ul>
+
+        <div class="research-item">
+          <div class="item-header">
+            <span class="item-title"><a href="https://labrai.github.io/PyHazards/" target="_blank"
+                style="color: inherit; text-decoration: none;">PyHazards: AI-Powered Hazard Prediction
+                Framework</a></span>
+            <span class="item-date">Sep. 2025 - Jan. 2026</span>
+          </div>
+          <ul>
+            <li>Contributed Transformer-based models to PyHazards, an open-source Python library for multi-hazard
+              prediction.</li>
+            <li>Developed modular data, training, and evaluation pipelines and benchmarked model performance against
+              public baselines.</li>
+            <li>Standardized model interfaces and experiment workflows with the RAI Lab team to improve reproducibility
+              and extensibility.</li>
+          </ul>
+        </div>
+
+        <div class="research-item">
+          <div class="item-header">
+            <span class="item-title">Comparative Narrative Analysis with Claude 3.7</span>
+            <span class="item-date">Mar. 2025 - Jun. 2025</span>
+          </div>
+          <ul>
+            <li>Developed an automated LLM-based framework using Claude 3.7 Sonnet for structured comparative narrative
+              analysis under diverse prompting strategies.</li>
+            <li>Built scalable inference and response-processing pipelines through the Anthropic API, organizing outputs
+              into structured JSON and human-readable text for systematic downstream analysis.</li>
+            <li>Implemented multi-dimensional evaluation across consistency, coherence, and bias to support systematic
+              narrative analysis and human assessment.</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="research-item">
-        <div class="item-header">
-          <span class="item-title"><a
-              href="https://seniordesignday.engr.uconn.edu/seniorprojectpt/senior-design-2024-computer-science-and-engineering-team-39/"
-              target="_blank" style="color: inherit; text-decoration: none;">OEM Controls Automated Angle Test for
-              AS5 🔗</a></span>
-          <span class="item-date">Aug. 2023 - May. 2024</span>
+      <div class="research-group">
+        <div class="research-group-header">
+          <img src="uconn.png" alt="UConn Logo" class="research-group-logo">
+          <div>
+            <h3 class="research-group-title">University of Connecticut</h3>
+            <div class="research-group-meta">Capstone Project Lead &middot; Storrs, CT &middot; Aug. 2023 - May 2024
+            </div>
+          </div>
         </div>
-        <div class="item-subtitle">Capstone Project Lead</div>
-        <ul>
-          <li>Led the design of a Python-based automation system on Ubuntu for calibrating and testing OEM Controls' AS5 angle sensor with a UFACTORY xArm 6.</li>
-          <li>Integrated a Tkinter GUI, robotic-arm API, CANOpen sensor communication, real-time progress monitoring, and CSV result logging to automate testing from −80° to 80° in 5° increments.</li>
-        </ul>
+
+        <div class="research-item">
+          <div class="item-header">
+            <span class="item-title"><a
+                href="https://seniordesignday.engr.uconn.edu/seniorprojectpt/senior-design-2024-computer-science-and-engineering-team-39/"
+                target="_blank" style="color: inherit; text-decoration: none;">OEM Controls Automated AS5 Angle Sensor
+                Testing</a></span>
+            <span class="item-date">Aug. 2023 - May 2024</span>
+          </div>
+          <ul>
+            <li>Led the development of an automated robotic calibration system for OEM Controls' AS5 angle sensor using
+              Python, Ubuntu, and a UFACTORY xArm 6.</li>
+            <li>Integrated robotic-arm control, CANopen sensor communication, GUI-based operation, and automated result
+              logging into a unified testing workflow covering a calibration range of −80° to 80°.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -242,10 +296,23 @@
 
       <div class="project-item">
         <div class="item-header">
+          <span class="item-title"><a href="https://github.com/JasonSDC/Sentiment-Analysis-on-Amazon-Office-Reviews"
+              target="_blank" style="color: inherit; text-decoration: none;">Large-Scale Sentiment Analysis on Amazon
+              Office Reviews</a></span>
+          <span class="item-date">Aug. 2025 - Oct. 2025</span>
+        </div>
+        <ul>
+          <li>Cleaned and normalized 200K balanced Amazon review texts through HTML/URL removal, tokenization, stopword filtering, and lemmatization; trained unigram TF-IDF models with LinearSVC, Logistic Regression, and Perceptron, achieving 89.6% test accuracy.</li>
+          <li>Compared two GloVe representations using a feed-forward neural network—100-d average pooling and 1000-d concatenation of the first 10 tokens—showing that average pooling improved test accuracy from 77.7% to 83.3% and reduced overfitting.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
           <span class="item-title"><a
               href="https://github.com/JasonSDC/Transfer-Learning-Strategies-for-Fine_Grained-Imbalanced-Waste-Classification"
               target="_blank" style="color: inherit; text-decoration: none;">Transfer Learning for Imbalanced Waste
-              Classification 🔗</a></span>
+              Classification</a></span>
           <span class="item-date">Jan. 2025 - May 2025</span>
         </div>
         <ul>
@@ -280,19 +347,6 @@
           <li>Built a semantic search pipeline using Weaviate with text2vec-transformers for vector-based brand similarity via GraphQL nearText queries.</li>
           <li>Developed a PDF QA chatbot with Streamlit using PyPDFLoader, ChromaDB, and Hugging Face embeddings in a RAG framework, and benchmarked Weaviate vs. ChromaDB on retrieval accuracy and scalability.</li>
           <li>Automated ingestion and querying with Python and Bash, orchestrating deployment with Docker Compose.</li>
-        </ul>
-      </div>
-
-      <div class="project-item">
-        <div class="item-header">
-          <span class="item-title"><a href="https://github.com/JasonSDC/Sentiment-Analysis-on-Amazon-Office-Reviews"
-              target="_blank" style="color: inherit; text-decoration: none;">Large-Scale Sentiment Analysis on Amazon
-              Office Reviews 🔗</a></span>
-          <span class="item-date">Aug. 2025 - Oct. 2025</span>
-        </div>
-        <ul>
-          <li>Cleaned and normalized 200K balanced Amazon review texts through HTML/URL removal, tokenization, stopword filtering, and lemmatization; trained unigram TF-IDF models with LinearSVC, Logistic Regression, and Perceptron, achieving 89.6% test accuracy.</li>
-          <li>Compared two GloVe representations using a feed-forward neural network—100-d average pooling and 1000-d concatenation of the first 10 tokens—showing that average pooling improved test accuracy from 77.7% to 83.3% and reduced overfitting.</li>
         </ul>
       </div>
 
@@ -374,6 +428,7 @@
             <span class="skill-tag">TensorFlow/Keras</span>
             <span class="skill-tag">scikit-learn</span>
             <span class="skill-tag">Hugging Face Transformers</span>
+            <span class="skill-tag">LLMs</span>
             <span class="skill-tag">Transfer Learning</span>
             <span class="skill-tag">RAG</span>
             <span class="skill-tag">Semantic Search</span>
@@ -385,12 +440,28 @@
 
         <div class="skill-category">
           <div class="skill-category-header">
+            <span class="skill-icon">🦾</span>
+            <h3 class="skill-title">Robotics &amp; Simulation</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Isaac Lab</span>
+            <span class="skill-tag">Isaac Sim</span>
+            <span class="skill-tag">NVIDIA Omniverse</span>
+            <span class="skill-tag">ROS 2</span>
+            <span class="skill-tag">Vision-Language-Action (VLA)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-header">
             <span class="skill-icon">🔬</span>
             <h3 class="skill-title">Domain &amp; Research</h3>
           </div>
           <div class="skill-tags">
             <span class="skill-tag">Cyber-Physical Systems</span>
             <span class="skill-tag">Reinforcement Learning</span>
+            <span class="skill-tag">Adversarial Robustness</span>
+            <span class="skill-tag">Trustworthy AI</span>
             <span class="skill-tag">Time-Series Forecasting</span>
           </div>
         </div>
@@ -446,7 +517,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <p>&copy; 2025 Dacheng Shen. All rights reserved.</p>
+      <p>&copy; 2026 Dacheng Shen. All rights reserved.</p>
     </footer>
   </div>
 
